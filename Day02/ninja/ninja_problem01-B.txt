@@ -1,0 +1,8 @@
+If you begin at
+    x = 0    y = 0
+where will you end up after these commands:
+    right(4)
+    down(2)
+    up(4)
+    left(3)
+    up(2)
