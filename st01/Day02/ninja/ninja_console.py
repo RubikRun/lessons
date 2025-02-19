@@ -1,4 +1,4 @@
-# exec(open('ninja_problem.py').read())
+# exec(open('ninja_console.py').read())
 
 import pygame
 import sys
@@ -31,7 +31,7 @@ BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
 # Ninja setup
-ninja_image = pygame.image.load("ninja/ninja.png") 
+ninja_image = pygame.image.load("ninja.png") 
 ninja_image = pygame.transform.scale(ninja_image, (CELL_SIZE * 1.3, CELL_SIZE * 1.3))
 ninja_rect = ninja_image.get_rect()
 
@@ -39,7 +39,7 @@ ninja_angle = 0  # Facing right (0 degrees)
 ninja_x, ninja_y = GRID_SIZE // 2, GRID_SIZE // 2  # Center of the grid
 
 # Apple setup
-apple_image = pygame.image.load("ninja/apple.png")
+apple_image = pygame.image.load("apple.png")
 apple_image = pygame.transform.scale(apple_image, (CELL_SIZE * 0.7, CELL_SIZE * 0.7))
 apple_rect = apple_image.get_rect()
 apple_rect.center = (4 * CELL_SIZE, 18 * CELL_SIZE)
