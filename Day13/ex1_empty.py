@@ -62,11 +62,17 @@ right_arm = [[350, 240], [356, 245], [362, 250], [368, 255], [374, 260], [380, 2
 
 
 def draw():
-    ...
+    circles (head, 9,(64, 224, 208))
+    circles (body, 9,(64, 224, 208))
+    circles (left_arm, 9,(64, 224, 208))
+    circles (right_arm, 9,(64, 224, 208))
+    circles (left_leg, 9,(64, 224, 208))
+    circles (right_leg, 9,(64, 224, 208))
 
-
-
-
+    ground = []
+    for x in range(20):
+        ground.append([x*10+250,450])
+    squares(ground, 3)
 
 
 # Main loop
