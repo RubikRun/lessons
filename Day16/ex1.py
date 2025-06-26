@@ -2,8 +2,8 @@ import pygame
 import random
 import pygame.gfxdraw
 
-WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 600
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
 SPEED_LIMIT = 3
 N = 100
 

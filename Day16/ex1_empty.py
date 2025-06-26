@@ -81,10 +81,12 @@ def hits_bottom(circle):
 def every_frame():
     ...
     # === Draw circles ===
-    # FILL HERE
+    for g in range(100):
+        draw_circle(circles[g])
 
-    # === Move circles ===
-    # FILL HERE
+    for g in range(100):
+        circles[g][1] += circles[g][3]
+        circles[g][2] += circles[g][4]
 
     # === Handle bouncing ===
     # FILL HERE
@@ -97,10 +99,12 @@ def at_the_beginning():
     circles = []
 
     # === Create circles and add them to the "circles" list
-    # FILL HERE
+    for e in range(100):
+        c = random_circle()
+        circles.append(c)
+        draw_circle(c)
 
-
-
+    print(circles)
 
 
 
