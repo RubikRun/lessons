@@ -1,0 +1,45 @@
+1. Install Python
+2. Install Visual Studio Code
+3. Run Python from console
+    3.1. Calculations
+    3.2. Variables
+4. Install Pygame
+    python -m pip install -U pygame --user
+5. Run snake.py
+    5.1. Look at the code of snake.py
+            - Find examples of variables
+            - Change snake's size
+            - Change window's size
+            - Change snake's initial speed
+6. Run ninja.py
+    5.1. Move the turtle with LEFT key, RIGHT key, UP key, DOWN key
+    5.2. Rotate the turtle with A key, D key
+    5.3. Notice that moving is relative to how the turtle is rotated
+7. Run ninja_console.bat
+    7.1. Available commands are:
+            rotateLeft()
+            rotateRight()
+            left(*number*)
+            right(*number*)
+            up(*number*)
+            down(*number*)
+    7.2. Take the apple
+    7.3. Rotate the turtle left
+    7.4. Take another apple
+    7.5. Where will the turtle be after these commands (starting at x=0; y=0)
+            left(2)
+            rotateLeft()
+            left(4-2)
+            rotateRight()
+            down(1)
+    7.6. Where will the turtle be after these commands (starting at x=0; y=0)
+            rotateLeft()
+            rotateLeft()
+            down(2*2+1)
+            left(2)
+            rotateRight()
+            down(99-98)
+            left(-3)
+            rotateLeft()
+            rotateLeft()
+            left(-4)

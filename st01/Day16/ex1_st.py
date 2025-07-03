@@ -69,16 +69,11 @@ while running:
         circles[i][1] += circles[i][3]
         circles[i][2] += circles[i][4]
 
-    # === Handle bouncing ===
     for i in range(N):
-        if hits_top(circles[i]):
-            circles[i][4] = -circles[i][4]
-        if hits_bottom(circles[i]):
-            circles[i][4] = -circles[i][4]
-        if hits_left(circles[i]):
+        if hits_left(circles[i]) or hits_right(circles[i]):
             circles[i][3] = -circles[i][3]
-        if hits_right(circles[i]):
-            circles[i][3] = -circles[i][3]
+        if hits_top(circles[i]) or hits_bottom(circles[i]):
+            circles[i][4] = -circles[i][4]
 
     pygame.display.flip()
     clock.tick(60)

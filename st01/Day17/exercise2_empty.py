@@ -16,20 +16,16 @@ def draw_circle(radius, px, py, color = [255, 0, 0]):
     pygame.gfxdraw.filled_circle(screen, px, py, radius, color)
     pygame.gfxdraw.aacircle(screen, px, py, radius, color)
 
-def hits_left(circle):
-    radius, px, _, _, _, _ = circle
+def hits_left(radius, px, py):
     return px - radius <= 0
 
-def hits_right(circle):
-    radius, px, _, _, _, _ = circle
+def hits_right(radius, px, py):
     return px + radius >= WINDOW_WIDTH
 
-def hits_top(circle):
-    radius, _, py, _, _, _ = circle
+def hits_top(radius, px, py):
     return py - radius <= 0
 
-def hits_bottom(circle):
-    radius, _, py, _, _, _ = circle
+def hits_bottom(radius, px, py):
     return py + radius >= WINDOW_HEIGHT
 
 def clear():
@@ -39,12 +35,22 @@ def clear():
 
 
 def at_the_beginning():
-    ...
+    global x, y, w, e
+    x = 80
+    y = 80
+    global w, e
+    w = 900
+    e = 80
 
 def every_frame():
-    ...
-
-
+    global x, y, w, e
+    clear()
+    draw_circle(50, x, y)
+    x += 1
+    y += 1
+    draw_circle(80,w,e, (0,255,0))
+    w -= 1
+    e += 1
 
 at_the_beginning()
 running = True

@@ -1,0 +1,12 @@
+If you begin at
+    x = 0    y = 0
+where will you end up after these commands:
+    up(1)
+    a = 2
+    up(a)
+    b = 3
+    a += 2
+    left(a + b)
+    rotateRight()
+    right(b - a)
+

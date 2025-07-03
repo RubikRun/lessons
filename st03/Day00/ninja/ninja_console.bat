@@ -1,0 +1,1 @@
+python -i -c "exec(open('ninja_console.py').read())"

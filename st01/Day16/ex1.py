@@ -77,34 +77,34 @@ def hits_bottom(circle):
 
 
 
-# You need to fill up this section
-def every_frame():
-    ...
-    # === Draw circles ===
-    for g in range(100):
-        draw_circle(circles[g])
-
-    for g in range(100):
-        circles[g][1] += circles[g][3]
-        circles[g][2] += circles[g][4]
-
-    # === Handle bouncing ===
-    # FILL HERE
-
-
-
-# You need to fill up this section
+# You need to fill this section
 def at_the_beginning():
     global circles
     circles = []
 
     # === Create circles and add them to the "circles" list
-    for e in range(100):
+    for i in range(N):
         c = random_circle()
         circles.append(c)
-        draw_circle(c)
 
-    print(circles)
+# You need to fill this section
+def every_frame():
+    global circles
+    # === Draw circles ===
+    for i in range(N):
+        draw_circle(circles[i])
+
+    # === Move circles ===
+    for i in range(N):
+        circles[i][1] += circles[i][3]
+        circles[i][2] += circles[i][4]
+
+    # === Handle bouncing ===
+    for i in range(N):
+        if hits_left(circles[i]) or hits_right(circles[i]):
+            circles[i][3] = -circles[i][3]
+        if hits_top(circles[i]) or hits_bottom(circles[i]):
+            circles[i][4] = -circles[i][4]
 
 
 
