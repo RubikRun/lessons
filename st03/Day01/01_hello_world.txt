@@ -1,0 +1,122 @@
+"Hello, world!" is the classic first program to do in any programming language.
+It's just a program that prints the text
+    "Hello world!"
+on the console.
+
+In C++ it looks like this:
+
+
+
+
+/////////////////////////////////////////
+//////// HelloWorld.cpp /////////////////
+/////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello, world!";
+}
+
+/////////////////////////////////////////
+
+
+
+
+0. It's good to be organized,
+    so let's create a folder for our lessons, for example
+        "CodingLessons"
+    and inside of it create a folder for day 1, for example
+        "Day01"
+
+1. Open your Day01 folder in Visual Studio Code
+    and create a file with a ".cpp" extension, for example
+        "HelloWorld.cpp"
+    Inside of it you can copy the code from above.
+    (Don't forget to save the file at the end.)
+    
+2. Open a Terminal window.
+    You can do this either in Visual Studio Code
+        Terminal -> New Terminal
+    or separately
+        Search for "Terminal" in your applications.
+        In a terminal you can use these 2 commands to navigate folders
+            pwd    (print working directory, prints the directory that we're currently in)
+            cd     (change directory, goes to another directory)
+        Go to your Day01 folder
+
+3. Compile your "HelloWorld.cpp" into an actual program
+        g++ HelloWorld.cpp
+    This will generate a file called
+        a.out
+    which is your final program that you can run like that
+        ./a.out
+    If you want another name for your program, not "a.out", you can compile like that
+        g++ HelloWorld.cpp -o program
+    and then run like that
+        ./program
+
+
+
+
+Question 1: What do you think will happen if you change
+    "Hello, world!"
+to
+    "Noo, la polizia"
+in your HelloWorld.cpp file,
+save it,
+and then run
+    ./program
+(or whatever your program is called)
+
+
+
+
+Let's explain the code now. How does it work?
+
+1. First line is
+    #include <iostream>
+In C++ we can include different parts of the language in our program.
+This "iostream" is used for input/output to the console.
+It allows us to use
+    cout
+    cin
+and others.
+We can include other stuff as well, for example
+    #include <cmath>
+is used for some mathematical functions.
+
+2. Second line is
+    using namespace std;
+This one is not important for now,
+but basically the full name of
+    cout
+is
+    std::cout
+This "std" is a namespace. All functions defined in "iostream" are in namespace "std"
+so they all begin with
+    std::
+We can write this line
+    using namespace std;
+to let C++ know that we are using the "std" namespace,
+and then we don't have to explicitly type
+    std::cout
+we can just type
+    cout
+
+3. Third line is    (not counting empty lines)
+    int main()
+Together with the opening and closing braces
+    {
+        ...
+    }
+it forms the "main function".
+This is the starting point of your program.
+Whatever code is written between the braces {}
+will be executed when you run the program.
+
+4. Fourth line is    ( not counting braces {} )
+    cout << "Hello, world!";
+This is the line that actually prints "Hello, world!" on the console.

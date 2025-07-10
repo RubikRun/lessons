@@ -1,0 +1,65 @@
+1. What is a comment?
+A comment in programming is a piece of text inside the code that is not treated as code.
+It's just ignored.
+It's used for explaining your code in human language, so that other people can read it more easily.
+You can technically use it for whatever you want.
+
+2. How do you create a comment in C++ ?
+There are 2 types of comments in C++:
+    2.1. One line comments.
+    To create a one line comment, just put
+        //
+    in the beginning of a line.
+    This will mark the whole line as a comment.
+    Example:
+
+                /////////////////////////////////////////
+                //////// HelloWorld.cpp /////////////////
+                /////////////////////////////////////////
+
+                #include <iostream>
+                using namespace std;
+
+                // This is the main function
+                int main()
+                {
+                    // The following line print "Hello, world!" on the console
+                    cout << "Hello, world!";
+                    
+                    // Whatever you want to write. Doesn't matter. afdfaodfnadf09f-u2-rtfq qeaf 9-af a9v ha9 avaedv
+                }
+
+                /////////////////////////////////////////
+
+    2.2. Multi-line comments
+    To create a multi-line comment, just put
+        /*
+    at the beginning of your comment, and put
+        */
+    at the end of your comment.
+    Example:
+
+                /////////////////////////////////////////
+                //////// HelloWorld.cpp /////////////////
+                /////////////////////////////////////////
+
+                #include <iostream>
+                using namespace std;
+
+                /* This is the
+                main
+                function */
+                int main()
+                {
+                    /*
+
+                Whatever you type here
+                                    doesn't matter
+                            daiufhnadfa9-- af9a af 9fa-
+                    */
+                    cout << "Hello, world!";
+                }
+
+                /////////////////////////////////////////
+
+3. In Visual Studio Code comments are usually colored in green, so you will see them easily.

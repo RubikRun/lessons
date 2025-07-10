@@ -1,0 +1,48 @@
+1. What is "cout" ?
+"cout" is a way to print stuff on the console.
+You can think of "cout" as "console output".
+
+2. It's used like this:
+    cout << *anything* ;
+Examples:
+    cout << "some text";
+    cout << 5;
+    cout << 5 + 12;
+    cout << 5 - 12;
+    cout << 3 * (2 + 1);        // what is the difference between these two lines?
+    cout << "3 * (2 + 1)";
+    cout << 3.1415;
+    cout << -999999;
+    cout << x;            // what is the difference between these two lines?
+    cout << "x";
+
+3. We can print multiple things, one after the other, like this:
+    cout << *first_thing* << *second_thing* << *third_thing*;
+just separating them with "<<".
+Examples:
+    cout << "My name is " << "Boris.";
+    cout << "I am " << 25 << " years old.";
+    cout << "I was born in " << 2 << 0 << 0 << 0;
+    cout << "I was born in " << 2000;
+    cout << "I was born in " << "2000";
+    cout << "I was bo" << "rn in 2000";
+    cout << "I" << " w" << "as bo" << "rn in 2" << 0 << "00";
+    cout << 12 << -12 << 12-12;
+
+4. What is "endl"?
+"endl" means "go to next line".
+Just like hitting Enter on your keyboard when you're typing.
+It's used when you want to print multiple lines.
+    cout << *first_line* << endl;
+    cout << *second_line* << endl;
+    cout << *third_line* << endl;
+Example:
+    cout << " - Do you like C++?" << endl;
+    cout << " - I love it! But hated it at first." << endl;
+It's a good practice to put "endl" on the end of the final line as well,
+even though you don't need to "go to next line".
+
+
+
+
+Exercises: ex_00.cpp

@@ -1,0 +1,85 @@
+1. What is a variable?
+A variable is like a box that has a NAME and contains a VALUE.
+For example, we can have a box called "age" that contains the number 11.
+
+    |           |
+    |     11    |
+    |           |
+    -----age-----
+
+2. Types.
+In C++ each variable has a specific type,
+which defines what kinds of values the variable can contain.
+Some basic types in C++ are
+    int - used for whole (integer) numbers, like:            5, 19, -3, 9999999, 0
+    float - used for numbers with a floating point, like:    3.14, 0.0003, -5.1, 2.0, 1354138.156866999
+    char - used for characters, like:                        'a', 'Y', '%', ' ', '4', '-'
+    bool - used for boolean values:                          true, false
+
+3. How to create a variable?
+Creating a variable is done like this:
+    *type* *name* = *value*;
+Examples:
+    int x = 5;
+    int age = 11;
+    float pi = 3.1415;
+    float someNumber = -6.567;
+    char c = 'b';
+    char someCharacter = '%';
+    bool b = true;
+    bool someBoolean = false;
+Providing a value is optional. We can create a variable without a value:
+    *type* *name*;
+Examples:
+    int y;
+    char someLongNameHere;
+But be careful! A variable ALWAYS has a value, no matter if you gave it a value or not.
+If you didn't give it a value, it will have some random value.
+----
+We can also create multiple variables, of the same type, on one line:
+    *type* *name1* = *value1*, *name2* = *value2*, *name3* = *value3*;
+Examples:
+    int x = 5, y = 2, z = -13413;
+    float pi = 3.1415, e = 2.7182, someNumber = 44.44444;
+    bool b1 = true, b2 = false, b3 = true;
+    char c1 = 'a', c2 = 't', c3 = '#';
+
+4. How to print a variable's value on the console?
+Easy, using "cout", of course.
+    cout << *variable_name*;
+Example:
+    int x = 12;
+    cout << x;
+    ----
+    Result: 12
+
+5. A variable's value can be changed multiple times throughout a program.
+That's why it's called a "variable" because it can vary.
+To change the value of an already existing variable, do this:
+    *variable_name* = *new_value*;
+Example:
+    int x = 12;
+    cout << x << endl;
+    x = -5;
+    cout << x << endl;
+    ----
+    Result: 12
+            -5
+Example:
+    int x = 12;
+    int y = 5;
+    cout << x + y << endl;
+    x = y;
+    cout << x + y << endl;
+    ----
+    Result: 17
+            10
+
+
+
+
+Exercises: ex_01.cpp
+           ex_02.cpp
+           ex_03.cpp
+           ex_04.cpp
+

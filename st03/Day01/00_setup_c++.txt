@@ -1,0 +1,27 @@
+For C++ development we need 2 things:
+
+1. A C++ compiler
+    1.1. What is a compiler?
+    1.2. Install gcc
+        Check if you have brew installed
+            brew --version
+        If not, install it
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        It will give you 2 commands that look like
+            echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+            eval "$(/opt/homebrew/bin/brew shellenv)"
+        Copy and run them, one by one.
+        Verify that brew is installed successfully
+            brew --version
+        If it did, you can use it to install gcc
+            brew install gcc
+        Verify that gcc is installed successfully
+            gcc --version
+            g++ --version
+        
+2. Visual Studio Code
+    2.1. What is Visual Studio Code?
+    2.2. Install from official site.
+    2.3. Inside of it, install the C++ extension
+
+That's it.

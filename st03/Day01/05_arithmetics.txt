@@ -1,0 +1,30 @@
+Arithmetics are kind of straightforward in C++,
+but still a few things to mention:
+
+1. Basic arithmetic operators
+    +        Adds two numbers
+    -        Subtracts one number from another
+    *        Multiplies two numbers
+    /        Divides one number by another
+One thing to note here is the type of numbers (int or float)
+and what happens if we combine them.
+----
+Another thing is the division operator (/) can be weird with integers.
+Using it with floats is totally fine.
+Example:
+    float x = 5.0 / 2.0;    // x will be 2.5
+But if you use it on 2 integers, the result will be rounded down to the closest integer.
+The floating point part will be just cut out.
+Example:
+    int x = 5 / 2;     // x will be 2, not 2.5
+    int y = 10 / 3;    // y will be 3, not 3.3
+Even if you save the result to a float variable, it will still be rounded down.
+    float z = 10 / 3;    // z will be 3.0, not 3.3
+
+2. The "%" operator
+This operator gives you the remainder after divising two integers.
+(WARNING: works only on integers, don't do stuff like 5.0 % 2.0)
+Example:
+    int x = 5 % 2;    // x will be 1, because 5 divided by 2 is 2 with a remainder of 1
+    int y = 10 % 3;    // y will be 1, because 10 divided by 3 is 3 with a remainder of 1
+    int z = 12 % 5;    // z will be 2, because 12 divided by 5 is 2 with a remainder of 2

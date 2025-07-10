@@ -1,0 +1,4 @@
+// Exercise 7:
+///////////////////////////////////////////////////////////////////////////
+// Create a program that asks for your age,
+// and tells you if you're old enough to drink.

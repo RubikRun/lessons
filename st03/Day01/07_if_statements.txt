@@ -1,0 +1,92 @@
+1. What is an "if statement" ?
+An if statement is a way execute a piece of code only if some condition is met.
+
+2. How to use an if statement?
+    if ( *condition* )
+    {
+        *piece of code*
+    }
+Example:
+    int x = 5;
+    if (x > 1)
+    {
+        cout << "x is greater than 1";
+    }
+    ----
+    Result: x is greater than 1
+Example:
+    int x = 5;
+    if (x < 1)
+    {
+        cout << "x is less than 1";
+    }
+    ----
+    Result: *nothing*
+
+3. What exactly can be the condition?
+You can compare numbers using these 6 operators
+    >        greater than
+    <        less than
+    ==       equals
+    !=       not equals
+    >=       greater than or equals
+    <=       less than or equals
+Example:
+    2 < 3    true
+    2 > 3    false
+    3 > 2    true
+    3 > 3    false
+    3 >= 3   true
+    3 <= 3   true
+    1 <= 3   true
+    5 <= 3   false
+    5 == 5   true
+    5 == 2   false
+    5 != 2   true
+    2 != 2   false
+You can compare characters with
+    ==       equals
+    !=       not equals
+Example:
+    'c' == 'c'    true
+    'c' == 'b'    false
+    'c' != 'b'    true
+    'c' != 'c'    false
+You can combine multiple conditions in one, using these 2 operators
+    &&    and
+    ||    or
+Example:
+    5 > 1 && 5 > 2     true
+    5 > 1 && 5 == 1    false
+    5 > 1 || 5 > 2     true
+    5 > 1 || 5 == 1    true
+    5 < 1 || 5 == 1    false
+
+4. What is "else" ?
+"else" can be used to execute some other piece of code,
+in case the condition is NOT met.
+    if ( *condition* )
+    {
+        *some piece of code*
+    }
+    else
+    {
+        *another piece of code*
+    }
+Example:
+    int x = 5;
+    if (x < 1)
+    {
+        cout << "apple";
+    }
+    else
+    {
+        cout << "banana";
+    }
+    ----
+    Result: banana
+
+
+
+
+Exercises: ex_07.cpp

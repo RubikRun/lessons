@@ -1,0 +1,50 @@
+1. What is "cin" ?
+Very similar to "cout",
+"cin" is a way of getting input from the user.
+You can think of "cin" as "console input".
+
+2. It's used like this:
+    cin >> *variable_name*;
+When your program reaches a "cin" it waits for the user
+to type something on the console and hit enter.
+Then, whatever they typed is saved in your variable.
+----
+Notice, unlike "cout", you give a variable to "cin",
+because cin gets a value from the user and needs to save it somewhere.
+Example:
+    int x;    // we don't need a value here, because we'll get it from cin
+    cin >> x;
+    cout << x;
+    ----
+    Result: User types in 5, hits enter, another 5 is printed.
+            User types in -154, hits enter, another -154 is printed.
+Example:
+    cout << "What is your age?" << endl;
+    int age;
+    cin >> age;
+    cout << "Wow, I am also " << age << "!" << endl;
+    ----
+    Result:
+            Computer: What is your age?
+            User: 25
+            Computer: Wow, I am also 25!
+
+3. We can get multiple inputs, one after the other, like this:
+    cin >> *variable_name1* >> *variable_name2*;
+Example:
+    cout << "Give me two numbers and I'll multiply them." << endl;
+    int x, y;
+    cin >> x >> y;
+    cout << x << " times " << y << " is " << 12;
+    ----
+    Result:
+            Computer: Give me two numbers and I'll multiply them.
+            User: 4
+                  3
+            Computer: 4 times 3 is 12
+
+
+
+
+Exercises: ex_05.cpp
+           ex_06.cpp
