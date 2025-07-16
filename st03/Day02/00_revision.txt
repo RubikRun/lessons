@@ -1,0 +1,94 @@
+What we learned last time
+
+
+0. Setup
+- installed g++ compiler
+- how to compile a .cpp file with g++?
+    g++ HelloWorld.cpp
+This command produces a file called
+    a.out
+which is the final program. You can run it like this:
+    ./a.out
+
+
+1. "Hello world" in C++
+/////////////////////////////////////////
+//////// HelloWorld.cpp /////////////////
+/////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello, world!";
+}
+
+/////////////////////////////////////////
+
+
+2. cout
+- printing text:
+    cout << "some text";
+- printing a variable:
+    cout << x;
+- printing a new line
+    cout << endl;
+- printing multiple things together:
+    cout << "I am " << age << " years old." << endl;
+
+
+3. variables
+- types of variables:
+    int, float, char, bool
+- how to create a variable?
+    int x = 5;
+    float y = 0.13;
+    char c = 'T';
+    bool b = false;
+- how to change a variable's value?
+    int x = 5;
+    ...
+    x = 12;
+    ...
+
+
+4. cin
+- getting input from user
+    int x;
+    cin >> x;
+
+
+5. arithmetics
+- we have the basic arithmetic operators
+    +
+    -
+    *
+    /
+- we also have this special operator
+    %
+which gives you the remainder after division,
+for example:
+    5 % 2 = 1
+    8 % 3 = 2
+    10 % 5 = 0
+
+
+6. if
+- how to use it?
+    if ( *condition* )
+    {
+        *piece of code*
+    }
+- how to use it together with "else"?
+    if ( *condition* )
+    {
+        *piece of code*
+    }
+    else
+    {
+
+    }
+
+
+Now let's finish exercises from last time.

@@ -1,29 +1,19 @@
-1. What is an "if statement" ?
-An if statement is a way execute a piece of code only if some condition is met.
-
-2. How to use an if statement?
-    if ( *condition* )
+1. What is "else if"?
+    if ( *condition_1* )
     {
         *piece of code*
     }
-Example:
-    int x = 5;
-    if (x > 1)
+    else if ( *condition_2* )
     {
-        cout << "x is greater than 1";
+        *piece of code*
     }
-    ----
-    Result: x is greater than 1
-Example:
-    int x = 5;
-    if (x < 1)
+    else
     {
-        cout << "x is less than 1";
+        *piece of code*
     }
-    ----
-    Result: *nothing*
 
-3. What exactly can be the condition?
+
+2. Simple conditions
 You can compare numbers using these 6 operators
     >        greater than
     <        less than
@@ -44,6 +34,7 @@ Example:
     5 == 2   false
     5 != 2   true
     2 != 2   false
+
 You can compare characters with
     ==       equals
     !=       not equals
@@ -52,6 +43,9 @@ Example:
     'c' == 'b'    false
     'c' != 'b'    true
     'c' != 'c'    false
+
+
+3. Complex conditions
 You can combine multiple conditions in one, using these 2 operators
     &&    and
     ||    or
@@ -61,32 +55,11 @@ Example:
     5 > 1 || 5 > 2     true
     5 > 1 || 5 == 1    true
     5 < 1 || 5 == 1    false
-
-4. What is "else" ?
-"else" can be used to execute some other piece of code,
-in case the condition is NOT met.
-    if ( *condition* )
-    {
-        *some piece of code*
-    }
-    else
-    {
-        *another piece of code*
-    }
-Example:
-    int x = 5;
-    if (x < 1)
-    {
-        cout << "apple";
-    }
-    else
-    {
-        cout << "banana";
-    }
-    ----
-    Result: banana
+    'A' == 'A' && 'B' == 'B'    true
 
 
 
 
-Exercises: ex_007.cpp
+Exercises: ex_008.cpp
+           ex_009.cpp
+           ex_010.cpp

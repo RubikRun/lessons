@@ -46,5 +46,5 @@ Example:
 
 
 
-Exercises: ex_05.cpp
-           ex_06.cpp
+Exercises: ex_005.cpp
+           ex_006.cpp

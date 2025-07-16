@@ -78,8 +78,8 @@ Example:
 
 
 
-Exercises: ex_01.cpp
-           ex_02.cpp
-           ex_03.cpp
-           ex_04.cpp
+Exercises: ex_001.cpp
+           ex_002.cpp
+           ex_003.cpp
+           ex_004.cpp
 
