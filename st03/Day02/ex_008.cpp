@@ -1,3 +1,4 @@
+// Exercise 8:
 // Create a program that asks for your score on a test.
 // (score is a whole number 0 to 100)
 // Then it tells you your grade (A, B, C, D or F).

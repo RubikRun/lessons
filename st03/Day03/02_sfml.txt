@@ -1,0 +1,33 @@
+SFML is a graphics library that we will use to do graphical exercises and make simple games.
+SFML = Simple and Fast Multimedia Library
+
+
+
+
+1. How to setup SFML on macOS?
+
+1.1. Run this to install SFML:
+    brew install sfml
+
+1.2. Create a folder for your program, call it
+    FirstGame
+or
+    SfmlSetup
+or something like that
+
+1.3. Inside of your FirstGame folder create a file
+    main.cpp
+Copy code from 
+    Day03/sfml_windows_setup/main.cpp
+
+1.4. To compile your program do this:
+    g++ main.cpp -o game -I/opt/homebrew/include -L/opt/homebrew/lib -lsfml-graphics -lsfml-window -lsfml-system
+
+1.5. To run your program do this:
+    ./game
+
+
+
+
+Exercises:
+    ex_011.cpp

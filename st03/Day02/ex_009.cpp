@@ -1,3 +1,4 @@
+// Exercise 9:
 // Imagine we have a chessboard.
 // Let's put it on the wall and play darts on it.
 // The goal of the game is to throw a dart and land inside of this area marked in red.

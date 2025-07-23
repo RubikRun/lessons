@@ -1,0 +1,61 @@
+1. True or false?
+    (a)    999 >= -999
+    (b)    5 > 2 && 7 > 5
+    (c)    (1 > 2 || 1 < 2) && (1 > 1 || 1 < 1)
+    (d)    'b' == 'b' || 'b' == 'a'
+
+
+2. What will be printed?
+    int a = 1;
+    int b = 1;
+    b = a + b;
+    a = a + b;
+    cout << a + b << a - b;
+
+
+3. What will be printed?
+----
+HINT: += means "increase by"
+For example
+    x += 3;
+is exactly the same as
+    x = x + 3;
+----
+So, what will be printed?
+    int x = 0;
+    x += 1;
+    x += 2;
+    x += 3;
+    x += 4;
+    x += 5;
+    x += 6;
+    x += 7;
+    x += 8;
+    x += 9;
+    x += 10;
+    cout << x << endl;
+
+
+3. Find the mistakes
+    int a = 14;
+    int b = 25;
+    if (a % 2 == 0)
+    {
+        cout << "a is odd" << endl;
+    }
+    else
+    {
+        cout << "a is even" << endl;
+    }
+    if (b % 7 = 0)
+    {
+        cout << "b is divisible by 7" << endl;
+    }
+    else
+    {
+        cout << "b is NOT divisible by 7" << endl;
+    }
+
+
+Now, let's do this exercise from last time:
+    ex_010.cpp

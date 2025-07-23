@@ -1,0 +1,67 @@
+What we learned so far
+
+
+0. Setup
+- how to compile a .cpp file with g++?
+    g++ HelloWorld.cpp
+This command produces a file called
+    a.out
+which is the final program. You can run it like this:
+    ./a.out
+
+
+1. cout
+- printing text:
+    cout << "some text";
+- printing a variable:
+    cout << x;
+- printing a new line
+    cout << endl;
+- printing multiple things together:
+    cout << "I am " << age << " years old." << endl;
+
+
+2. variables
+- types of variables:
+    int, float, char, bool
+- how to create a variable?
+    int x = 5;
+    float y = 0.13;
+    char c = 'T';
+    bool b = false;
+
+
+3. cin
+- getting input from user
+    int x;
+    cin >> x;
+
+
+4. if, else, else if
+- how to use it?
+    if ( *condition* )
+    {
+        *piece of code*
+    }
+    else if ( *condition* )
+    {
+        *piece of code*
+    }
+    else
+    {
+        *piece of code*
+    }
+
+
+5. Conditions
+- You can compare values using these 6 operators
+    >        greater than
+    <        less than
+    ==       equals
+    !=       not equals
+    >=       greater than or equals
+    <=       less than or equals
+- You can combine comparisons using these 2 operators
+    &&       and
+    ||       or
+
