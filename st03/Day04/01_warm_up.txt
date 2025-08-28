@@ -1,0 +1,68 @@
+What will be printed?
+
+1.
+    int a = 2000;
+    int b = 20;
+    int c = 5;
+    cout << a + b + c;
+
+2.
+    int a = 9;
+    int b = 17;
+    if (a % 3 == 0)
+    {
+        cout << "ding";
+    }
+    if (b % 4 == 0)
+    {
+        cout << "dong";
+    }
+
+3.
+    int age1 = 91341;
+    if (age1 < 0 || age1 > 120)
+    {
+        cout << "invalid age" << endl;
+    }
+    int age2 = 53;
+    if (age2 > 0 || age2 < 120)
+    {
+        cout << "invalid age" << endl;
+    }
+
+4.
+    int hour = 8;
+    int minute = 74;
+    if (hour < 1 || hour > 12 || minute < 1 || minute > 60)
+    {
+        cout << "invalid time";
+    }
+    minute = 5;
+    if (hour >= 1 || hour <= 12 || minute >= 1 || minute <= 60)
+    {
+        cout << "invalid time";
+    }
+
+5.
+    int x = 4;
+    while (x <= 13)
+    {
+        cout << x << endl;
+        x += 2;
+    }
+
+6. (HARD)
+================================
+    int a = 1;
+    int b = 1;
+    while (a <= 20)
+    {
+        cout << a << endl;
+        a += b;
+        b += 1;
+    }
+==================================
+
+
+Now, let's continue with
+    ex_014.cpp

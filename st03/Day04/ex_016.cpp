@@ -1,4 +1,4 @@
-// Exercise 11:
+// Exercise 15:
 // Look below
 
 #include <SFML/Graphics.hpp>
@@ -21,23 +21,21 @@ void drawCircle(int x, int y, int radius, sf::Color color = {190, 30, 30}) {
 
 
 // Fill in this render() function
-// so that it draws 2 circles:
-// - first one must be at position x = 100, y = 200, and have radius of 50
-// - second one must be at position x = 300, y = 300, and have radius of 120
+// so that it draws a big rectangle made out of small circles.
+// (See image ex_016.png)
 //
-// How to do that?
-// You can use the drawCircle(...) function.
-// The way it works is you give it 3 numbers:
-// - The X position of your circle
-// - The Y position of your circle
-// - The radius of your circle
-// and it will draw the circle.
-// For example
-//     drawCircle(200, 100, 30)
-// will draw a circle at position x = 200, y = 100 with radius of 30.
+// Coordinates used in image:
+//     Top-left circle at:
+//           x = 200
+//           y = 100
+//       Bottom-right circle at:
+//           x = 600
+//           y = 500
+//       Offset between circles:
+//           20 in both x and y
+//
 void render()
 {
-    drawCircle(300, 500, 10);
 }
 
 
