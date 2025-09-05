@@ -1,4 +1,4 @@
-// Exercise 15:
+// Exercise 18:
 // Look below
 
 #include <SFML/Graphics.hpp>
@@ -21,9 +21,21 @@ void drawCircle(int x, int y, int radius, sf::Color color = {190, 30, 30}) {
 
 
 // Fill in this render() function
-// so that it draws a big rectangle made out of small circles,
-// but with a rectangular whole in the middle.
-void render()
+// so that it draws a big rectangle made out of small circles.
+// When the mouse is in the right half of the window, the circles should be red.
+// Otherwise they should be blue.
+//
+// To know where the mouse is you can use this variable "mouse".
+// Typing "mouse.x" gives you the X coordinate of the mouse in the current frame,
+// and typing "mouse.y" gives you the Y coordinate of the mouse.
+//
+// By default this drawCircle() function draws a red circle.
+// If you want to draw a blue circle you can give it an RGB color at the end, like that:
+//     drawCircle(50, 50, 8, {30, 30, 190});
+//
+// (See ex_018.mp4)
+//
+void render(sf::Vector2i mouse)
 {
 }
 
@@ -50,7 +62,8 @@ int main()
         // Clear screen
         window.clear();
 
-        render();
+        const sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+        render(mousePos);
 
         // Update the window
         window.display();

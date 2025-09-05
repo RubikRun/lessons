@@ -1,4 +1,4 @@
-// Exercise 15:
+// Exercise 22:
 // Look below
 
 #include <SFML/Graphics.hpp>
@@ -22,22 +22,14 @@ void drawCircle(int x, int y, int radius, sf::Color color = {190, 30, 30}) {
 
 // Fill in this render() function
 // so that it draws a big rectangle made out of small circles.
-// (See image ex_016.png)
+// The circle where the mouse is should be blue.
+// All other circles should be red.
 //
-// Coordinates used in image:
-//     Top-left circle at:
-//           x = 200
-//           y = 100
-//       Bottom-right circle at:
-//           x = 600
-//           y = 500
-//       Offset between circles:
-//           20 in both x and y
+// (See ex_022.mp4)
 //
-void render()
+void render(sf::Vector2i mouse)
 {
 }
-
 
 
 
@@ -62,7 +54,8 @@ int main()
         // Clear screen
         window.clear();
 
-        render();
+        const sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+        render(mousePos);
 
         // Update the window
         window.display();
