@@ -1,0 +1,1 @@
+g++ ex_023.cpp -o game.exe -IC:/dev/libs/SFML/include -LC:/dev/libs/SFML/lib -lsfml-graphics -lsfml-window -lsfml-system -std=c++17

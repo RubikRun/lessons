@@ -1,0 +1,164 @@
+0. What is a function in C++?
+It's a piece of code that you have separated and given a name to.
+This function can then be used by just typing its name and the piece of code will be executed.
+
+
+1. A void function:
+        void f()
+        {
+            * piece of code *
+        }
+        ...
+        int main()
+        {
+            f();
+        }
+- is the simplest type of function.
+- doesn't do/have anything extra, it's just a piece of code that you can run by calling its name
+Example 1:
+        void f()
+        {
+            cout << "banana" << endl;
+        }
+        int main()
+        {
+            f();
+            f();
+            f();
+            f();
+        }
+    Result:
+        banana
+        banana
+        banana
+        banana
+
+
+2. An int function
+        int f()
+        {
+            * piece of code *
+            return ... ;
+        }
+- also contains a piece of code
+- also has a name and can be called the same way
+- gives you back a result. Specifically the result is an int value.
+        int x = f();
+    The whole thing "f()" becomes the result.
+Example 2:
+        int f()
+        {
+            int a = 5;
+            int b = a + 3;
+            a++;
+            return a + b;
+        }
+        int main()
+        {
+            int x = f();
+            cout << x;
+        }
+    Result:
+        you tell me?
+
+
+3. A bool function
+        bool f()
+        {
+            * piece of code *
+            return ... ;
+        }
+- exact same as an int function, but result is a bool value
+Example 3:
+        bool f()
+        {
+            int a = 5;
+            int b = 4;
+            b++;
+            b++;
+            return a < b;
+        }
+        int main()
+        {
+            bool x = f();
+            cout << x << endl;
+
+            if ( f() )
+            {
+                cout << "rick" << endl;
+            }
+            else
+            {
+                cout << "morty" << endl;
+            }
+        }
+    Result:
+        you tell me?
+
+
+4. Some more examples:
+Example 4:
+        void askAge()
+        {
+            int age;
+            cout << "What's your age?" << endl;
+            cin >> age;
+        }
+        void askHeight()
+        {
+            float height;
+            cout << "What's your height?" << endl;
+            cin >> height;
+        }
+        int main()
+        {
+            askAge();
+            askHeight();
+        }
+Example 5:
+        int funcA()
+        {
+            return 5;
+        }
+        int funcB()
+        {
+            return funcA() + 9;
+        }
+        int funcC()
+        {
+            return funcB() - funcA() * 2;
+        }
+        int main()
+        {
+            cout << funcC() << endl;
+        }
+    Result:
+        ?
+Example 6:
+        int funcA()
+        {
+            int x = 3;
+            x += x;
+            return x;
+        }
+        bool funcB()
+        {
+            return x > 6;
+        }
+        int funcC()
+        {
+            if (funcB())
+            {
+                return 2;
+            }
+            else
+            {
+                return -2;
+            }
+        }
+        int main()
+        {
+            cout << funcC() << endl;
+        }
+    Result:
+        ?
