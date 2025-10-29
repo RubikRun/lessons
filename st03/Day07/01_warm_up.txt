@@ -1,0 +1,32 @@
+1. True or false?
+--->    5 > 2
+--->    1 < 2 && 2 < 3
+--->    'a' == 'a' || 5 != 5
+--->    -12 > 1 || 1 > 12 || 555 >= 555
+
+
+2. What will be printed?
+    int x = 10;
+    int y = -12;
+    if (x + y > 0)
+    {
+        cout << "a dog is a ";
+    }
+    else
+    {
+        if (y * 2 > y || x * 2 > x)
+        {
+            cout << "car";
+        }
+    }
+    cout << "pet";
+
+
+3. What will be printed?
+    int t = 1;
+    while (t < 100)
+    {
+        cout << t << endl;
+        t *= 2;
+    }
+

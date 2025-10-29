@@ -1,6 +1,6 @@
 0. What is a function in C++?
 It's a piece of code that you have separated and given a name to.
-This function can then be used by just typing its name and the piece of code will be executed.
+A function can then be used by just typing its name followed by "()".
 
 
 1. A void function:

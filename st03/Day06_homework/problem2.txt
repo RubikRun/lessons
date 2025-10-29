@@ -1,0 +1,64 @@
+Imagine Andres is running a churrería (a place that sells churros).
+Until now his pricing was the following:
+    - 1 churro  for 3$    (expensive, i know)
+    - 2 churros for 6$
+    - 3 churros for 9$
+    - 4 churros for 12$
+    etc.
+basically clients paid 3$ per churro.
+Simple, right?
+You wrote this program for him to help him with calculating the price of an order:
+=========================================================================
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Enter number of churros: ";
+    int n;
+    cin >> n;
+    cout << "Price: " << n * 3 << endl;
+}
+=========================================================================
+
+Can you compile and run it?
+Create a new file, you can call it:
+    hw0602.cpp
+Then copy the code above and paste it in the new file.
+Compile and run        (as shown in problem1.txt)
+Try running it a few times, entering different number of churros, make sure you understand how it works.
+
+
+Your first task here is a small one:
+Right now the program prints for example this:
+    Price: 15
+We want it to print this:
+    Price: 15$
+Adding a dollar sign after the number.
+Can you modify the code to do this?
+
+
+Your second task is:
+Andres decides to change his pricing.
+If an order is 4 churros or less then the pricing is the same:
+    - 1 churro  for 3$
+    - 2 churros for 6$
+    - 3 churros for 9$
+    - 4 churros for 12$
+But if an order is 5 churros or more then each new churro is 2$ instead of 3$:
+    - 5 churros for 14$
+    - 6 churros for 16$
+    - 7 churros for 18$
+    - 8 churros for 20$
+    etc.
+Can you modify the code to calculate the price based on this new pricing?
+        Hint: If n is less than or equal to 4 do the same as now.
+              Otherwise the price should be 12$ plus the number of "additional" churros times 2$.
+              "Additional" churros are the ones after the 4th one,
+              so if the order is 6 churros then you have 2 additional ones.
+              If the order is 10 churros then you have 6 additional ones.
+
+At the end you should get a program that asks you to enter number of churros
+and then tells you the price based on the new pricing
+with a dollar sign at the end.
+Don't forget to test it - compile, run a few times and verify that it works.

@@ -1,0 +1,10 @@
+Your solutions to problem 1 and problem 2 will be 2 files:
+    hw0601.cpp
+    hw0602.cpp
+    (or however you called them)
+You can send them to my email:
+    borisd2000@gmail.com
+If you both did the problems and you want to send them separately
+please write your name in the email's text. Thanks.
+
+Good luck ;)

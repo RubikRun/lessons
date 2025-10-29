@@ -1,0 +1,74 @@
+(You can look at 00_revision.txt for a quick revision or whenever you forget what something means or how something is done)
+
+Here is a program that prints numbers from 1 to 100:
+====================================================
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 1;
+    while (x <= 100)
+    {
+        cout << x << endl;
+        x++;
+    }
+}
+====================================================
+
+Can you compile and run it? Here's how to do it:
+
+1. Open Visual Studio Code
+
+2. Open your folder    (the folder we used for all our programs so far).
+                        Hint: Look for an "Open Folder" button.
+                              See image 01.01.png
+
+3. Create a new file
+                        Hint: On the left side you should see all files in your folder
+                              Above them there are 4 buttons. The first one is for creating a new file.
+                              See image 01.02.png
+   Name your new file like this:
+       hw0601.cpp                (because it's homework for day 06 problem 01)
+   or whatever name you want     (has to end in .cpp)
+
+4. Copy the code from above and paste it in your new file
+
+5. Open a terminal in your folder
+                        Hint: On the top-most ribbon there is a Terminal menu
+                              First option there is New Terminal.
+                              See image 01.03.png
+
+6. Compile your file by running this command in the terminal:
+        g++ hw0601.cpp
+                        (if you called your file something else, put your file's name instead of hw0601.cpp)
+
+7. After compiling you can finally run your program by running this command:
+        ./a.out
+
+If you ran it succesfully you should see numbers from 1 to 100 each on a new line.
+
+====================================================
+
+Your task now is to modify this program
+so that it first prints the numbers from 1 to 50 and then the numbers from 20 to 80.
+When you run it you should see this:
+1
+2
+3
+...
+49
+50
+20
+21
+22
+...
+79
+80
+
+Whenever you change the code and you want to run the program again don't forget to do this:
+1. Save your file
+2. Compile the program again
+        g++ hw0601.cpp
+3. Then you can run it
+        ./a.out
