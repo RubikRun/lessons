@@ -1,0 +1,33 @@
+1. If we have these 2 functions
+        int f()
+        {
+            return 5;
+        }
+        int g()
+        {
+            return f() * f() + 2;
+        }
+then which of these are true?
+--->    f() > 5
+--->    f() + 5 < 12
+--->    f() < g() && f() + g() > 35
+
+
+
+
+2. What will be printed?
+        int x = 5;
+
+        int f()
+        {
+            x++;
+            return x;
+        }
+
+        int main()
+        {
+            while (x < 10)
+            {
+                cout << f() + 100 << endl;
+            }
+        }
