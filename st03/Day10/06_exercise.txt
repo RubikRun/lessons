@@ -1,0 +1,3 @@
+Create a vector of size 20 with these numbers:
+    2, 4, 8, 16, 32, etc.
+Print all elements.

@@ -1,0 +1,2 @@
+Create a program where the user enters 10 numbers
+and those 10 numbers are kept in a vector.
