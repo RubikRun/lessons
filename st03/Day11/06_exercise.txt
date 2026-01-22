@@ -1,0 +1,5 @@
+Create a program that tells you how many numbers are there here:
+    4, 1, 11, 92, 0, -5, -22, 53, 2, 4, 954, 1, 3, 3, 3, 89, 4, 55, 12, 53, 5, 1, 11, 522, -53, 19, 99, 0, 0, 23
+
+
+(Hint: Create a vector with these numbers as elements, then print vector's size)

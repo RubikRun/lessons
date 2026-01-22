@@ -1,0 +1,141 @@
+Imagine a building with 100 floors numbered from 1 to 100.
+
+-------
+| 100 |
+|  99 |
+|  98 |
+|  97 |
+|  96 |
+|  95 |
+|  94 |
+|  93 |
+|  92 |
+|  91 |
+|  90 |
+|  89 |
+|  88 |
+|  87 |
+|  86 |
+|  85 |
+|  84 |
+|  83 |
+|  82 |
+|  81 |
+|  80 |
+|  79 |
+|  78 |
+|  77 |
+|  76 |
+|  75 |
+|  74 |
+|  73 |
+|  72 |
+|  71 |
+|  70 |
+|  69 |
+|  68 |
+|  67 |
+|  66 |
+|  65 |
+|  64 |
+|  63 |
+|  62 |
+|  61 |
+|  60 |
+|  59 |
+|  58 |
+|  57 |
+|  56 |
+|  55 |
+|  54 |
+|  53 |
+|  52 |
+|  51 |
+|  50 |
+|  49 |
+|  48 |
+|  47 |
+|  46 |
+|  45 |
+|  44 |
+|  43 |
+|  42 |
+|  41 |
+|  40 |
+|  39 |
+|  38 |
+|  37 |
+|  36 |
+|  35 |
+|  34 |
+|  33 |
+|  32 |
+|  31 |
+|  30 |
+|  29 |
+|  28 |
+|  27 |
+|  26 |
+|  25 |
+|  24 |
+|  23 |
+|  22 |
+|  21 |
+|  20 |
+|  19 |
+|  18 |
+|  17 |
+|  16 |
+|  15 |
+|  14 |
+|  13 |
+|  12 |
+|  11 |
+|  10 |
+|   9 |
+|   8 |
+|   7 |
+|   6 |
+|   5 |
+|   4 |
+|   3 |
+|   2 |
+|   1 |
+-------
+
+The elevator in this building can go up and down only by 3 floors at a time.
+If you want to go from floor 20 to floor 32 the elevator would need to stop at
+    20
+    23
+    26
+    29
+    32
+When the elevator stops it says
+    "This is floor 23"    (or whichever floor it's on at the moment)
+So, in your trip from floor 20 to floor 32 you would hear it say:
+    This is floor 20
+    This is floor 23
+    This is floor 26
+    This is floor 29
+    This is floor 32
+
+
+Task A:
+------------------------------------------------------------------------------------------------
+Create a program that prints what the elevator would say if you take it from floor 51 to floor 5
+------------------------------------------------------------------------------------------------
+
+
+On New Year's Eve the elevator is drunk, and it says the floors incorrectly.
+For some reason, instead of saying the correct floor it first multiplies the floor by 2 and adds 3.
+For example, if the elevator stops at floor 8, it wouldn't say:
+    This is floor 8
+It would say
+    This is floor 19
+because 8 * 2 + 3 is 19
+
+
+Task B:
+------------------------------------------------------------------------------------------------------
+Create a program that prints what the drunk elevator would say if you take it from floor 2 to floor 35
+------------------------------------------------------------------------------------------------------

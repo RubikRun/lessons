@@ -1,0 +1,1 @@
+Create a program that calculates the product of numbers from 62 to 75    (including 62 and 75)

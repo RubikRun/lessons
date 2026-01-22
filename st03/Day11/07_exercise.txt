@@ -1,0 +1,2 @@
+Create a program that prints each number on a separate line:
+    4, 1, 11, 92, 0, -5, -22, 53, 2, 4, 954, 1, 3, 3, 3, 89, 4, 55, 12, 53, 5, 1, 11, 522, -53, 19, 99, 0, 0, 23

@@ -1,0 +1,15 @@
+Using this vector
+        std::vector<int> v = { 4, 6, 3, 10, 15, 8, 12, 12, 0, 1, 2, 3, 4, 5, 6, 20, 3, 6 };
+create a program that prints
+    # # # #
+    # # # # # #
+    # # #
+    # # # # # # # # # #
+    ...
+In other words, it prints
+    a line of 4 #'s
+    a line of 6 #'s
+    a line of 3 #'s
+    a line of 10 #'s
+    ...
+One line for each element of the vector, with as many #'s as the element itself.

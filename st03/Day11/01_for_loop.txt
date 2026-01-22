@@ -1,0 +1,77 @@
+0. First, remember the while loop:
+
+        int i = 0;                              (i is called the "counter" variable of the loop)
+        while (i < 100)
+        {
+            ***some code***
+            i++;
+        }
+
+1. What is a for loop?
+
+- A for loop is very similar to a while loop,
+  but it contains all "counter" variable code in one place:
+
+        for (int i = 0; i < 100; i++)
+        {
+            ***some code***
+        }
+
+  This for loop does exactly the same as the while loop above.
+
+- Example 1:
+    Printing numbers from 0 to 9:
+
+            for (int i = 0; i < 10; i++)
+            {
+                cout << i << endl;
+            }
+
+    Result:
+
+            0
+            1
+            2
+            3
+            ...
+            8
+            9
+
+
+- Example 2:
+    Printing numbers from 10 to 1:
+
+            for (int i = 10; i >= 1; i--)
+            {
+                cout << i << endl;
+            }
+
+    Result:
+            10
+            9
+            8
+            7
+            ...
+            2
+            1
+
+
+- Example 3:
+    Calculating the sum of numbers from 1 to 10:
+
+            int sum = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                sum += i;
+            }
+            cout << sum << endl;
+
+    Result:
+            55
+
+
+- Exercise 4:
+    Create a program that calculates the sum of numbers from 62 to 75    (including 62 and 75)
+
+- Exercise 5:
+    Create a program that calculates the product of numbers from 62 to 75    (including 62 and 75)
