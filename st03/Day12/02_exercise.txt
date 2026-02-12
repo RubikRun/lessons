@@ -1,0 +1,28 @@
+Create a program where you enter a number N
+and it prints an N by N box made of "#"
+
+Example:
+    User:       5
+    Program:    # # # # #
+                # # # # #
+                # # # # #
+                # # # # #
+                # # # # #
+
+Example:
+    User:       2
+    Program:    # #
+                # #
+
+Example:
+    User:       8
+    Program:    # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+                # # # # # # # #
+
+(NOTE: There is a space between any two #'s)
