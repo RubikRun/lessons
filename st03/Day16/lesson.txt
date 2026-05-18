@@ -1,0 +1,6 @@
+Worked on game (Space Invaders clone):
+- implemented rotation of spaceship
+- bullets also rotate together with it
+For next time:
+- implement separate rotations for each bullet
+- implement bullets destroying themselves when they go out of window

@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="AquariumOfCircles.vcxproj" Id="9c05b7da-cb4f-443c-b7d6-1708054dba1b" />
-</Solution>
