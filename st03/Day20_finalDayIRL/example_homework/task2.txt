@@ -1,0 +1,7 @@
+Create a graphics program that draws 2 circles:
+- one big, one small
+- they should overlap slightly
+- they should have different colors
+
+Send me 1 file:
+    task2.cpp
