@@ -1,0 +1,63 @@
+input
+
+Функция, която позволява на потребителя да напише нещо на конзолата
+
+        input()
+           ^
+           |
+           |
+           Изчаква потребителя да напише нещо
+           Превръща се в каквото потребителят е написал
+
+
+    print("Hey, how old are you?")
+    input()
+    print("Cool. I'm 26.")
+
+
+
+    print("Hey, how old are you?")
+    age = input()
+    print("Cool, I am also " + age)
+
+1. input() винаги ни дава стойност от тип str
+Ако знаем, че потребителят ще напише число, можем да превърнем стойността от str в int с функцията int:
+
+        int(...)
+             ^
+             |
+             |
+             каквото напишем тук ще се превърне в int
+
+    x = int("12")
+    print(x + 3)    <---    15
+
+
+    x = "8"
+    y = int(x + "2")
+    print(y + 2)    <---    84
+
+Как можем да използваме int(...) заедно с input() ?
+
+    print("Hey, how old are you?")
+    age = int(input())
+    born = 2026 - age
+    print("So you were born in " + born)    <---    Невалидно, виж по-долу
+
+Ако искаме да превърнем стойност от int в str, можем да ползваме функцията str:
+
+        str(...)
+             ^
+             |
+             |
+             каквото напишем тук ще се превърне в str
+
+    x = 5
+    y = str(x) + "12"
+    print(x)    <---    512
+
+
+    print("Hey, how old are you?")
+    age = int(input())
+    born = 2026 - age
+    print("So you were born in " + str(born))
